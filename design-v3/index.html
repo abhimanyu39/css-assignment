@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Chatbot</title>
+    <link rel="stylesheet" href="./index_style.css" />
+    <script>
+      function displayFunction() {
+        var moreBtn = document.getElementById("more-1");
+        var moreText = document.getElementById("show-1");
+        var lessBtn = document.getElementById("less-1");
+
+        if (moreText.style.display === "none") {
+          moreText.style.display = "inline";
+          lessBtn.style.display = "inline";
+          moreBtn.style.display = "none";
+        } else {
+          moreText.style.display = "none";
+          lessBtn.style.display = "none";
+          moreBtn.style.display = "inline";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="page-body">
+      <div class="chat-box-wrapper">
+        <div class="header">
+          <div class="profile-image">
+            <img
+              class="chat-avatar"
+              src="./assests/user-avatar.png"
+              alt="avatar"
+              width="40"
+              height="40"
+            />
+            <div class="status"></div>
+          </div>
+          <div class="user-name">Ask myHR</div>
+          <div class="buttons">
+            <img
+              class="return-icon"
+              src="./assests/return-icon.svg"
+              alt="return"
+              width="15"
+              height="15"
+            />
+            <img
+              class="close-icon"
+              src="./assests/close-icon.svg"
+              alt="return"
+              width="15"
+              height="15"
+            />
+          </div>
+        </div>
+        <div class="chat-body">
+          <div class="message-1">
+            How do I change my withholdings for my bonus?
+          </div>
+          <div class="message-2">
+            <h3>Lorem ipsum dolor sit amet consectetur</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              repellat recusandae esse! Sint, perspiciatis eum,
+              <span onClick="displayFunction()" id="more-1">Read more</span>
+              <span id="show-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                repellat recusandae esse! Sint, perspiciatis eum,
+                <span onClick="displayFunction()" id="less-1">Read less</span>
+              </span>
+            </p>
+          </div>
+          <div class="message-2">
+            <h3>Lorem ipsum dolor sit amet consectetur</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              repellat recusandae esse! Sint, perspiciatis eum,
+              <span id="more-2">Read more</span>
+            </p>
+          </div>
+        </div>
+        <div class="text-area">
+          <input class="text-input" type="text" placeholder="Ask something" />
+          <img
+            src="./assests/mail.svg"
+            alt="send-icon"
+            width="20"
+            height="20"
+          />
+        </div>
+        <div class="footer">@ Powered by Cognicor</div>
+      </div>
+    </div>
+  </body>
+</html>
