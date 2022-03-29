@@ -1,0 +1,51 @@
+h1 {
+  color: blue;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  font: 'Helvetica Neue';
+}
+
+.chat-box-wrapper {
+  border-radius: 25px;
+  height: 450px;
+  width: 350px;
+  position: fixed;
+  box-shadow: 0 0 10px 1px #dedede;
+  right: 15px;
+  bottom: 15px;
+}
+
+.chat-box-wrapper .header {
+    height: 50px;
+    border-bottom: 1px solid #dedede;
+}
+
+.chat-box-wrapper .chat-body {
+    height: 320px;
+    border-bottom: 1px solid #dedede;
+}
+
+.chat-box-wrapper .text-area {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 10px;
+    border-bottom: 1px solid #dedede;
+}
+.chat-box-wrapper .footer {
+    height: 40px;
+    display: flex;
+    color: #dedede;
+    font-size: 15px;
+    padding: 0 15px 0 0;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.text-input {
+    width: 200px;
+    height: 25px;
+}
